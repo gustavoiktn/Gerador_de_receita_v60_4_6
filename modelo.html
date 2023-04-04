@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body onload="carregar()">
+    <header>
+        Gerador de receita 4:6 para V60
+    </header>
+    <section id="sec1"> 
+        <div class="secb">
+            Quanto de café você está utilizando?
+        </div>
+        <hr>
+        <div class="caix" id="qnt">    
+            <input type="number" id="qnti" class="r1"> (g)
+        </div>
+        <hr>
+        <div class="secb">
+            Como você prefere seu café?
+        </div>
+        <hr>
+        <div id="opsens" class="selec">Sensorial:</div> 
+
+        <input list="opcoessensorial" id="sensorial" name="sensorial" class="r2">
+            <datalist id="opcoessensorial">
+                <option value="Equilibrado">
+                <option value="Doce">
+                <option value="Ácido">  
+            </datalist>
+        <hr>
+
+        <div id="opcorpo" class="selec"> Corpo:</div>
+
+        <input list="opcoescorpo"  id="corpo" name="corpo" class="r2">
+            <datalist id="opcoescorpo">
+                <option value="Equilibrado">
+                <option value="Mais Corpo">
+                <option value="Menos Corpo">
+            
+            </datalist>
+        <hr>
+        
+        <input type="button" value="Gerar Receita" onclick="calcular()">
+    </section>
+    <section id="sec2">
+        <div id="secres">
+            <div class="secb">Despejos:<hr></div>            
+            <div id="dd1" class="dd">   
+                <div class="despejo">1º Despejo:</div>  
+                <div id="desp1" type="desp" class="res" > </div> 
+            </div> 
+            <div id="dd2" class="dd"> 
+                <div class="despejo">2º Despejo:</div>  
+                <div id="desp2" type="desp" class="res" > </div> 
+            </div>     
+            <div id="dd3" class="dd">     
+                <div class="despejo">3º Despejo:</div> 
+                <div id="desp3" type="desp" class="res" > </div> 
+            </div>
+            <div id="dd4" class="dd"> 
+                <div class="despejo">4º Despejo: </div> 
+                <div id="desp4" type="desp" class="res" > </div> 
+            </div>    
+            <div id="dd5" class="dd">    
+                <div class="despejo">5º Despejo: </div>
+                <div id="desp5" type="desp" class="res" > </div> 
+            </div>        
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="secb" >Sua receita aparecerá aqui...</div>
+        <hr>
+        <img src="arquivomanha.png">        
+    </section>
+    <div id="duvidas">
+        <div id="pressinfo" class="info info0">
+                <p onmouseenter="passar(0)" onmouseout="tirar()" onclick="abrirsec4()"> Dúvidas? Clique aqui para mais informações.</p>
+        </div>
+    </div>
+    <section id="sec4">
+        <div>O que é o método 4:6? </div>
+            <div>
+                    <p>Desenvolvido para &copy; HARIO V60 e apresentado por Tetsu Kasuya ao World Brewers Cup em 2016, o método consiste em dividir a extração em duas etapas diferentes: os primeiros 40%, com dois despejos, determinam o balanço entre acidez e doçura, e os 60% restantes, dependendo da quantidade de despejos, determinará como será o corpo do café.</p>
+                    <p>Portanto, este projeto serve para facilitar a aplicação do método no dia-a-dia, permitindo ao usuário escolher a quantidade de café disponível e sua preferência sensorial particular.</p>
+                    <p ><b id="obs">Observações importantes: </b>Se seu resultado na xícara não o agradou como o esperado lembre sempre de ajustar a moagem, de modo que o tempo de extração médio esteja por volta de 2:15 a 3:15. Se persistir o descontentamento selecione opções diferentes de corpo e sensorial para avaliar qual seria o modelo ideal para o café que você tem em casa. Utilize sempre café especial ou gourmet, de preferência especial, moído na hora.
+                    </p>
+            </div>
+        <div>Saiba mais:</div>
+        <div id="infodirect1" class="info info1">
+            <p  onmouseenter="passar(1)" onmouseout="tirar()" onclick="abrelink(1)">Vídeo: o que é a &copy;HARIO V60? </p>
+        </div>
+        <div id="infodirect2" class="info info2">
+            <p  onmouseenter="passar(2)" onmouseout="tirar()" onclick="abrelink(2)" >Vídeo: resumindo o conceito da receita (&copy;HARIO)</p>
+        </div>
+        <div id="infodirect3" class="info info3">
+            <p  onmouseenter="passar(3)" onmouseout="tirar()" onclick="abrelink(3)">Artigo: detalhes sobre como ajustar a receita</p>
+        </div>
+        <div id="infodirect4" class="info info4">
+            <a id="a1" class="aa" href="http://youtu.be" target="_blank" onmouseenter="passar2(a1)" onmouseout="tirar2(a1)" >Vídeo: explicando a moagem</a>
+        </div>
+        <div id="infodirect5" class="info info5">
+            <a id="a2" class="aa" href="https://www.instagram.com/tetsukasuya/" target="_blank" onmouseenter="passar2(a2)" onmouseout="tirar2(a2)">Instagram: Tetsu Kasuya</a>
+        </div>
+    </section>  
+    <footer> Instagram: <a id='a3' class='aa'  href="https://www.instagram.com/gustavoiketani/" target='_blank' onmouseenter="passar2(a3)" onmouseout="tirar2(a3)" >gustavoiketani</a></footer>
+    <script src="script.js"></script>
+</body>
+</html>

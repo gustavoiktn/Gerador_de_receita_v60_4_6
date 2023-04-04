@@ -1,0 +1,165 @@
+body {
+    background: rgb(216, 140, 9);
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    text-align: center;
+    text-shadow: black 2px 2px 3px;
+    font: 20pt Verdana ;
+    margin: 15px;
+}
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(77, 75, 75);
+    margin-bottom: 30px; 
+}
+section#sec3{
+    text-align: center;
+    font: 15pt arial;
+}   
+div.secb {
+    text-align: center;
+    margin-bottom: 13px;
+    font-weight: bold ;
+    font: normal 10pt;   
+}
+div#qnt{
+    margin-left: 175px;
+    width: 100px;
+    /*margin: auto;*/
+    margin-bottom: 13px;
+    font-size: 10pt;
+}
+div.selec{
+    height: fit-content;
+    width:80px;
+    margin-left: 70px;
+    font-size: 12pt;
+    display: inline-block;
+    margin-right: -4px;     
+}
+div#sec2inicio{
+    margin-bottom: 18px;
+    font: bold 15pt arial;
+    text-align: center;   
+}    
+div.dd{
+    font: normal 15pt arial;
+}
+div.despejo{
+    display: inline-block;
+    width: 103px;
+    margin-left: 96px;
+    margin-right: 0px;
+}
+div[type=desp]{
+    background: rgb(223, 151, 26);
+    border-radius:  8px;
+    text-align: center;
+    width: 97px;
+    height: fit-content;
+    margin-left: 0px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0); 
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 19px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    color: white;
+}
+div#duvidas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.info{
+    color:blue;
+    font: normal 10pt arial;
+    text-decoration: underline;
+    width: fit-content;   
+    margin-bottom: 13px;   
+}
+input.r1{
+    background-color: rgb(216, 140, 9);
+    width: 50px;
+    height: 40px;
+    text-align:center;
+    font: normal 12pt Arial;
+    border-radius: 10px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 0.5px 3px rgb(0, 0, 0);       
+}
+input.r2{
+    height: fit-content;
+    width: 100px;
+    margin-bottom: 13px;
+    margin-left: -4px;
+    display: inline-block;
+}
+input[type=button]{
+    width: 100px;
+    font-weight: bold;
+    margin-left: 150px;
+    box-shadow: 2px 2px 2px rgb(3, 3, 3);
+    display: inline-block;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+p{
+    font: 10pt arial; 
+    text-align:justify;
+}
+a.aa{
+    color: blue;
+} 
+a.aa2{
+    color:rgb(250, 3, 246);
+    text-decoration: none;
+}
+img{
+    width:250px;
+    height: 250px;   
+}
+b#obs{
+    color: red;
+}
+hr {
+    width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
